@@ -54,7 +54,7 @@ variable "ec2_role_name" {
 
 variable "api_key_secret_id" {
   type        = string
-  description = "(Required) API key for web app to talk to SaaS platform."
+  description = "(Required) API key for web app to talk to SaaS 2 platform."
 }
 
 
