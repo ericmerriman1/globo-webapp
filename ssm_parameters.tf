@@ -25,7 +25,7 @@ data "aws_iam_policy_document" "ssm_access" {
 
 resource "aws_iam_policy" "ssm_access" {
   name   = "${local.name_prefix}-ssm-access"
-  policy = data.aws_iam_policy_document.ssm_access.json
+  policy = data.aws_iam_policy_document.ssm_access.arn
 }
 
 resource "aws_iam_role_policy_attachment" "ssm_access" {
