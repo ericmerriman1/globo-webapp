@@ -52,6 +52,16 @@ variable "playbook_repository" {
   description = "(Required) URI of Ansible Playboook."
 }
 
+variable "ec2_role_name" {
+  type        = string
+  description = "(Required) Role name for ec2 instance profile."
+}
+
+variable "api_key_secret_id" {
+  type        = string
+  description = "(Required) API key for web app to talk to SaaS platform."
+}
+
 
 
 
